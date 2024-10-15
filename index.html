@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>U-shaped Effect of Color in Short-form videos:
+Combination of Text, Audio, Image ML and Generative AI
+
+			
+
+</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="keywords" content="">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/uikit.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/uikit-icons.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+<style>
+
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+	margin-top: 60px;
+}
+.nav-link {
+    display: block;
+	text-align: center;
+    padding: 0.5rem 3rem;
+	color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+.nav-link:hover{   
+	text-decoration: none;
+	 color: #0056b3;
+	}
+
+	
+</style>
+
+
+		</head>
+
+	<body oncontextmenu=self.event.returnValue=false>
+
+	
+
+
+<div class="banner" style="background-color:#f5f5f5;padding-bottom:26px">
+	<div class="uk-container uk-container-center container">
+		<style>.large-title {font-size: 26px;}
+		</style>
+
+		<div class="large-title">
+			<p class="" style="font-size:2rem;text-align: center;">U-shaped Effect of Color in Short-form videos: 
+			</p>	
+			<p  style="font-size:1.5rem;text-align: center;"> Combination of Text, Audio, Image ML and Generative AI
+			</p>
+				
+
+			</div>
+
+
+
+	<div class="uk-container uk-container-center container">
+		<style>.large-title {font-size: 26px;}
+		</style>
+
+		<div class="large-title uk-margin-medium">
+				ABSTRACT
+			
+			</div>
+	<div class="uk-container uk-container-center container">
+	
+		<div class="medium-title">
+				<p  style="text-indent: 2em;"> 
+					Short-form videos are among the fastest-growing forms of online digital sales. While extensive research has focused on image color, the impact of video color on short-form video marketing remains underexplored. In this study, we analyze 2,984 videos containing over 406,420 images and develop a multimethod framework integrating text, audio, and image machine learning techniques (e.g., OpenCV, CNN-BiLSTM, BERT), alongside generative AI tools (e.g., GPT-4, KAN-TTS). Studies 1 and 2 utilize consumption data and apply these machine learning methods to examine the U-shaped relationship between cover-mean and video-peak colors on clicks and sales, respectively. Study 3 investigates how audio arousal and text sentiment moderate these effects. Study 4 uses generative AI to design video stimuli and conducts two randomized online experiments to provide causal evidence, replicating earlier findings. These insights offer a novel understanding of video color strategies and practical guidance for video creators, advertisers, and platform managers in the short-form video industry.
+</div>
+</div>
+
+		<div class="uk-container uk-container-center container" id="content">
+			<style>.large-title {font-size: 26px;}
+		</style>
+			<div class="large-title">
+				
+				<!-- Multimedia Appendices -->
+						
+			</div>
+
+			<div class="uk-grid-small" uk-grid>
+				<div class="uk-width-1-1">
+				<div class="content">
+			
+				<style>
+				    h3 {
+				        font-weight: bold;
+				    }
+				</style>
+				<h3 id="1" style="font-size:1.5rem"> 1. Overview Study
+
+
+				</h3>
+
+				<div class="sub_title">
+					<p  style="text-indent: 2em;"> 
+                        This research is structured across 4 studies, as summarized in Figure 1. In Study 1, to examine the first impression of the video, we tested the relationship between video color at the cover-mean level and clicks. In Study 2, to further investigate whether clicks could convert into direct purchase behavior, we tested the U-shaped relationship between video color at the video-peak level and sales. In Study 3, to further validate the impact of the video color, we validate the U-shaped effect of video color and its moderating effect of audio arousal and text sentiment. In Study 4, to provide causal evidence beyond correlations, we first exploit generative AI to design video stimuli, and then launch 2 online experiments. The experiment results for video color consistently replicate the empirical results of previous studies. 
+					</p>
+				</div>
+				<div class="video">
+					<!-- <img src="./media/Figure 1. Flow Chart .png" alt=""> -->
+					<!-- <iframe height="" width="100%" src="https://player.bilibili.com/player.html?bvid=BV1vd4y1B74h&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+		        </div>
+
+				<div class="uk-grid-small" uk-grid>
+					<div class="uk-width-1-1" uk-lightbox="animation: slide">
+					<div style="max-width: 800px;margin:auto">
+						<a href="media/Figure 1. Research Framework.png" data-caption=""><img src="media/Figure 1. Research Framework.png" alt=""></a>
+				
+
+
+
+						<div class="info uk-margin-medium">
+							<p class="uk-text-center"><strong>Figure 1.</strong>Research Framework 
+
+	
+							</p>
+						</div>
+						
+					</div>
+					
+				
+
+				<style>
+				    h3 {
+					font-weight: bold;
+				    }</style>
+				<h3 id="4"  style="font-size: 1.5rem;">2. Data Processing 
+
+
+				</h3>
+				<div class="sub_title">
+					<p  style="text-indent: 2em;"> 
+						Figure 2 shows the flowchart for text, audio, and image data processing, which consists of 3 steps. Step 1 is data clean. Three types of unstructured data—text, audio, and image—can be obtained. This involves separating the images (frames) and audio of each recorded video and converting the audio into text via Aliyun's automatic speech recognition (ASR) technology. Step 2 is variables extraction. Various analytical techniques are applied. OpenCV is used to extract color values, CNN-BiLSTM models determine audio arousal levels from the audio, and BERT techniques analyze the text sentiment. Step 3 is empirical analysis. These data are utilized across Studies 1, 2, and 3.
+
+					</p>
+				</div>
+			
+				<div class="uk-grid-small" uk-grid>
+					<div class="uk-width-1-1" uk-lightbox="animation: slide">
+					<div style="max-width: 800px;margin:auto">
+						<a href="media/Figure 2. Flowchart.png" data-caption=""><img src="media/Figure 2. Flowchart.png" alt=""></a>
+				
+
+
+
+						<div class="info uk-margin-medium">
+							<p class="uk-text-center"><strong>Figure 2.</strong>Flowchart for Text, Audio, and Image Data Processing 
+
+	
+							</p>
+						</div>
+						
+					</div>
+					
+				
+				
+
+
+				<h3 id="2"  style="font-size:1.2rem">3. Experimental Stimuli in Study 4
+
+
+				</h3>
+
+				<div class="sub_title">
+				<p  style="text-indent: 2em;"> 
+										</h3>
+										In Study 4, two 3 x 2 experiments, Study 4a and Study 4b, were conducted to test the causality effect. We display the stimuli of video color, audio arousal, and text sentiment in the following sections. 
+
+					</p>
+				</div>
+				<h3 id="2"  style="font-size:1.2rem">3.1 Stimuli Design Leverage Generative AI 
+
+
+
+				</h3>
+
+				<div class="sub_title">
+				<p  style="text-indent: 2em;"> 
+										</h3>
+										We leverage generative AI and follow the procedure shown in Figure 3. Step 1 is text generation with GPT4. We generate texts that merely differ in text sentiment (Study 4b), keeping homogeneity in other text indicators. the text sentiment stimuli used in Study 4b are shown in Table 1. Step 2 is audio generation with Knowledge-Aware Neural TTS (KAN-TTS). Based on the text generated by GPT4, we generate audios that merely differ in arousal (Study 4a), keeping homogeneity in other vocal indicators. Step 3 is image generation with stable video and further to manipulates the video colors. Step 4 is stimulus synthesization. Text, audio, and image obtained from the above 3 steps are synthesized into videos. 
+
+					</p>
+				</div>
+
+				<div class="uk-grid-small" uk-grid>
+					<div class="uk-width-1-1" uk-lightbox="animation: slide">
+					<div style="max-width: 800px;margin:auto">
+						<a href="media/Figure 3.png" data-caption=""><img src="media/Figure 3.png" alt=""></a>
+				
+						<div class="info uk-margin-medium">
+							<p class="uk-text-center"><strong>Figure 3.</strong>Video Stimuli Design Process Leverage Generative AI  
+
+	
+							</p>
+						</div>
+						
+					</div>
+				</div>
+				<h3 id="2"  style="font-size:1.2rem">3.2 Study 4a: Main Effect and Moderating Effect of Audio Arousal
+
+				</h3>
+
+				<div class="sub_title">
+				<p  style="text-indent: 2em;"> 
+										</h3>
+										To create different extents of using hue (cold vs. middle vs. warm), we used image software constructed a pair of short-form video with three types color. We used GPT4 to generate the video script and then used text to speech (TTS) tool transform this script. The stimuli videos are shown as follows,
+
+					</p>
+				</div>
+	
+
+				<div class="uk-grid-small" uk-grid>
+					<div class="uk-width-1-1 uk-width-1-3@m uk-padding-small" uk-lightbox="animation: slide">
+						<div class="info">
+							<h3>Group1
+							</h3>
+							<div class="item">
+								<span>
+									Video color: 
+								</span>
+								<strong>
+									cold
+								</strong>
+							</div>
+							<div class="item">
+								<span>
+									Audio arousal: 
+								</span>
+								<strong>
+									high
+								</strong>
+							</div>
+			
+			
+						</div>
+						<div class="video2">
+							<iframe width="100%" src="//player.bilibili.com/player.html?aid=1401386415&bvid=BV1tr421W77p&cid=1459658645&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+						</div>
+					</div>
+					<div class="uk-width-1-1 uk-width-1-3@m uk-padding-small" uk-lightbox="animation: slide">
+						<div class="info">
+							<h3>Group2
+							</h3>
+							<div class="item">
+								<span>
+									Video color: 
+								</span>
+								<strong>
+									middle
+								</strong>
+							</div>
+							<div class="item">
+								<span>
+									Audio arousal: 
+								</span>
+								<strong>
+									high
+								</strong>
+							</div>
+			
+			
+						</div>
+						<div class="video2">
+							<iframe width="100%" src="//player.bilibili.com/player.html?aid=1701308612&bvid=BV1BK421b7nA&cid=1459658647&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+						</div>
+					</div>
+
+					<div class="uk-width-1-1 uk-width-1-3@m uk-padding-small" uk-lightbox="animation: slide">
+						<div class="info">
+							<h3>Group3
+							</h3>
+							<div class="item">
+								<span>
+									Video color: 
+								</span>
+								<strong>
+									warm
+								</strong>
+							</div>
+							<div class="item">
+								<span>
+									Audio arousal: 
+								</span>
+								<strong>
+									high
+								</strong>
+							</div>
+			
+			
+						</div>
+						<div class="video2">
+							<iframe width="100%" src="//player.bilibili.com/player.html?aid=1751265332&bvid=BV1xx42127tH&cid=1459658662&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+						</div>
+					</div>
+
+					<div class="uk-width-1-1 uk-width-1-3@m uk-padding-small" uk-lightbox="animation: slide">
+						<div class="info">
+							<h3>Group4
+							</h3>
+							<div class="item">
+								<span>
+									Video color: 
+								</span>
+								<strong>
+									cold
+								</strong>
+							</div>
+							<div class="item">
+								<span>
+									Audio arousal: 
+								</span>
+								<strong>
+									low
+								</strong>
+							</div>
+			
+			
+						</div>
+						<div class="video2">
+							<iframe width="100%" src="//player.bilibili.com/player.html?aid=1501468207&bvid=BV1kS421w725&cid=1459658496&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+						</div>
+					</div>
+
+					<div class="uk-width-1-1 uk-width-1-3@m uk-padding-small" uk-lightbox="animation: slide">
+						<div class="info">
+							<h3>Group5
+							</h3>
+							<div class="item">
+								<span>
+									Video color: 
+								</span>
+								<strong>
+									middle
+								</strong>
+							</div>
+							<div class="item">
+								<span>
+									Audio arousal: 
+								</span>
+								<strong>
+									low
+								</strong>
+							</div>
+			
+			
+						</div>
+						<div class="video2">
+
+							<iframe  width="100%" src="//player.bilibili.com/player.html?aid=1701398047&bvid=BV1sK421472v&cid=1459658687&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+						</div>
+					</div>
+
+					<div class="uk-width-1-1 uk-width-1-3@m uk-padding-small" uk-lightbox="animation: slide">
+						<div class="info">
+							<h3>Group6
+							</h3>
+							<div class="item">
+								<span>
+									Video color: 
+								</span>
+								<strong>
+									warm
+								</strong>
+							</div>
+							<div class="item">
+								<span>
+									Audio arousal: 
+								</span>
+								<strong>
+									low
+								</strong>
+							</div>
+			
+			
+						</div>
+						<div class="video2">
+
+							<iframe width="100%" src="//player.bilibili.com/player.html?aid=1751361428&bvid=BV1Rx42127nt&cid=1459658719&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+						</div>
+					</div>
+
+				
+					
+				</div>	
+
+
+				<!-- rrr -->
+
+				<h3 id="2" style="font-size:1.2rem">3.3 Study 4b: Main Effect and Moderating Effect of Text Sentiment</h3>
+
+			 
+							<div class="sub_title">
+								<p  style="text-indent: 2em;"> 
+									To create different extents of using text sentiment (high vs. low), we constructed a pair of short-form video transcripts emphasizing positive emotion (high) and using fewer positive emotion (low) respectively. 
+				
+								</p>
+							</div>
+							<div class="uk-grid-small" uk-grid>
+								<div class="uk-width-1-1" uk-lightbox="animation: slide">
+								<div style="max-width: 800px;margin:auto">
+									<div class="uk-text-center uk-padding-small"><strong>Table 1. 
+									</strong>Script in Study 4b</div>
+									
+									<a href="media/Table 1.png" data-caption=""><img src="media/Table 1.png" alt=""></a>
+				
+								
+								
+								
+								</div>
+							
+
+							
+					</div>
+				</div>
+				
